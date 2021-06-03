@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 import createError from 'http-errors';
-import app from './Server/Config/app';
+import app from './Config/app';
 import debug from 'debug';
 debug('week-3:server');
 import http from 'http';

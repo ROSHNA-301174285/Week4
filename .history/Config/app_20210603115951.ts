@@ -4,14 +4,14 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 
-import indexRouter from './routes/index';
+import indexRouter from '../Routes/index';
 //let usersRouter = require('./routes/users');
 
 const app = express();
 export default app;// exports app as default object for this module
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'Views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
